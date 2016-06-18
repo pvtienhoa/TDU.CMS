@@ -30,12 +30,17 @@ namespace TDU.CMS.Models
         [Key, Display(AutoGenerateField = true)]
         public long ID { get; set; }
 
-        [Required]
-        [Display(AutoGenerateField = false)]
-        public long CardID { get; set; }
+        [Required, StringLength(30, MinimumLength = 4)]
+        [Display(Name = "Card Number", ShortName = "CardNo")]
+        public string CardNumber { get; set; }
 
-        [Display(Name = "Card")]
-        public virtual Card Card { get; set; }
+        [Required, StringLength(30, MinimumLength = 4)]
+        [Display(Name = "Card Holder", ShortName = "CardHol")]
+        public string CardHolder { get; set; }
+
+        [Required, StringLength(9)]
+        [Display(Name = "Cif No", ShortName = "Cif")]
+        public string Cif { get; set; }
 
         [EnumDataType(typeof(RequestType))]
         [Display(Name = "Request Type",ShortName = "ReqType")]
