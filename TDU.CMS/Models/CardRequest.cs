@@ -30,15 +30,15 @@ namespace TDU.CMS.Models
         [Key, Display(AutoGenerateField = true)]
         public long ID { get; set; }
 
-        [Required, StringLength(30, MinimumLength = 4)]
+        [ StringLength(30, MinimumLength = 4)]
         [Display(Name = "Card Number", ShortName = "CardNo")]
         public string CardNumber { get; set; }
 
-        [Required, StringLength(30, MinimumLength = 4)]
+        [ StringLength(30, MinimumLength = 4)]
         [Display(Name = "Card Holder", ShortName = "CardHol")]
         public string CardHolder { get; set; }
 
-        [Required, StringLength(9)]
+        [ StringLength(9)]
         [Display(Name = "Cif No", ShortName = "Cif")]
         public string Cif { get; set; }
 

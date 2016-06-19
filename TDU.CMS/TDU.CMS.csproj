@@ -93,6 +93,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606191940079_CardRequest.cs" />
+    <Compile Include="Migrations\201606191940079_CardRequest.Designer.cs">
+      <DependentUpon>201606191940079_CardRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606191942539_CardRequest1.cs" />
+    <Compile Include="Migrations\201606191942539_CardRequest1.Designer.cs">
+      <DependentUpon>201606191942539_CardRequest1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\CardRequest.cs" />
@@ -126,6 +134,12 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606191940079_CardRequest.resx">
+      <DependentUpon>201606191940079_CardRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606191942539_CardRequest1.resx">
+      <DependentUpon>201606191942539_CardRequest1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
