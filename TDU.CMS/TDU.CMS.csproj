@@ -93,6 +93,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\CardRequest.cs" />
     <Compile Include="Models\Department.cs" />
