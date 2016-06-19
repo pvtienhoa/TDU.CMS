@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using TDU.CMS.ViewModels;
 
 namespace TDU.CMS
 {
@@ -14,6 +7,19 @@ namespace TDU.CMS
         public Form1()
         {
             InitializeComponent();
+            InitBindings();
+            ribbonControl1.Merge += ribbonControl1_Merge;
         }
-    }
+
+        private void InitBindings()
+        {
+            var fluentAPI = mvvmContext1.OfType<CMSDbContextViewModel>();
+            fluentAPI.BindCommand(importButton, (x, m) => x.Show(m), x => x.Modules[0]);
+        }
+
+
+        private void ribbonControl1_Merge(object sender, DevExpress.XtraBars.Ribbon.RibbonMergeEventArgs e)
+        {
+            ribbonControl1.SelectedPage = e.MergedChild.SelectedPage;
+        }}
 }

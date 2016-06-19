@@ -39,5 +39,10 @@ namespace TDU.CMS.CMSDbContextDataModel
         {
             get { return GetRepository(x => x.Set<Employee>(), (Employee x) => x.ID); }
         }
+
+        IRepository<RequestHistory, long> ICMSDbContextUnitOfWork.RequestHistories
+        {
+            get { return GetRepository(x => x.Set<RequestHistory>(), (RequestHistory x) => x.ID); }
+        }
     }
 }

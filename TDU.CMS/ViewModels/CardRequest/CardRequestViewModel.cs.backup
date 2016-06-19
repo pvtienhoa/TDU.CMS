@@ -40,13 +40,6 @@ namespace TDU.CMS.ViewModels
         }
 
 
-        /// <summary>
-		/// The view model that contains a look-up collection of Cards for the corresponding navigation property in the view.
-        /// </summary>
-        public IEntitiesViewModel<Card> LookUpCards
-        {
-            get { return GetLookUpEntitiesViewModel((CardRequestViewModel x) => x.LookUpCards, x => x.Cards); }
-        }
 
     }
 }

@@ -33,5 +33,10 @@ namespace TDU.CMS.CMSDbContextDataModel
         /// The Employee entities repository.
         /// </summary>
         IRepository<Employee, long> Employees { get; }
+
+        /// <summary>
+        /// The RequestHistory entities repository.
+        /// </summary>
+        IRepository<RequestHistory, long> RequestHistories { get; }
     }
 }

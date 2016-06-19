@@ -43,6 +43,7 @@ namespace TDU.CMS.ViewModels
                 new CMSDbContextModuleDescription("Cards", "CardCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Cards)),
                 new CMSDbContextModuleDescription("Departments", "DepartmentCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Departments)),
                 new CMSDbContextModuleDescription("Employees", "EmployeeCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Employees)),
+                new CMSDbContextModuleDescription("Request Histories", "RequestHistoryCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.RequestHistories)),
             };
         }
 
