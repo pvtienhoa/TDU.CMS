@@ -9,7 +9,8 @@ namespace TDU.CMS.DataBase
 {
     public class CMSDbContext : System.Data.Entity.DbContext
     {
-        public CMSDbContext() : base(CreateConnection(), true) { }
+        //public CMSDbContext() : base(CreateConnection(), true) { } 
+        public CMSDbContext() : base("TDUCMSConnectionString") { }
         public CMSDbContext(string connectionString) : base(connectionString) { }
         public CMSDbContext(DbConnection dbConnection):base(dbConnection,true) { }
 
