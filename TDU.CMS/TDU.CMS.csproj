@@ -111,6 +111,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\CardRequest\CardRequestCollectionViewModel.cs" />
     <Compile Include="ViewModels\CardRequest\CardRequestViewModel.cs" />
+    <Compile Include="ViewModels\CardRequest\CustomCardRequestViewModel.cs" />
     <Compile Include="ViewModels\Card\CardCollectionViewModel.cs" />
     <Compile Include="ViewModels\Card\CardViewModel.cs" />
     <Compile Include="ViewModels\CMSDbContextViewModel.cs" />

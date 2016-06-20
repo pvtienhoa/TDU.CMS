@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using TDU.CMS.ViewModels;
 
 namespace TDU.CMS.Views.CardRequest
 {
@@ -17,6 +18,15 @@ namespace TDU.CMS.Views.CardRequest
         public CardRequestEditFormView()
         {
             InitializeComponent();
+            InitBindings();
+        }
+
+        private void InitBindings()
+        {
+            var fluentAPI = mvvmContext1.OfType<CardRequestViewModel>();
+            fluentAPI.WithEvent(this, "Load").EventToCommand(x => x.OnLoaded());
+            fluentAPI.SetObjectDataSourceBinding(
+                cardRequestBindingSource, x => x.Entity, x => x.Update());
         }
     }
 }

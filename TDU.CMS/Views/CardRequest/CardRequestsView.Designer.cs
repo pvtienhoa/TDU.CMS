@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEdit = new DevExpress.XtraBars.BarButtonItem();
@@ -39,7 +38,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext(this.components);
+            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -127,7 +126,9 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Default;
+            this.gridView1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             // 
             // mvvmContext1
             // 
@@ -137,7 +138,7 @@
             DevExpress.Utils.MVVM.BindingExpression.CreateParameterizedCommandBinding(typeof(TDU.CMS.ViewModels.CardRequestCollectionViewModel), "Delete", "SelectedEntity", this.bbiDelete),
             DevExpress.Utils.MVVM.BindingExpression.CreateCommandBinding(typeof(TDU.CMS.ViewModels.CardRequestCollectionViewModel), "Refresh", this.bbiRefresh)});
             this.mvvmContext1.ContainerControl = this;
-            this.mvvmContext1.ViewModelType = typeof(TDU.CMS.ViewModels.CardRequestCollectionViewModel);
+            this.mvvmContext1.ViewModelType = typeof(TDU.CMS.ViewModels.CustomCardRequestViewModel);
             // 
             // CardRequestsView
             // 

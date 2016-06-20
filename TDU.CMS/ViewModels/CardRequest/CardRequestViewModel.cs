@@ -17,7 +17,7 @@ namespace TDU.CMS.ViewModels
     /// <summary>
     /// Represents the single CardRequest object view model.
     /// </summary>
-    public partial class CardRequestViewModel : SingleObjectViewModel<CardRequest, long, ICMSDbContextUnitOfWork>
+    public partial class CardRequestViewModel : SingleObjectViewModel<Models.CardRequest, long, ICMSDbContextUnitOfWork>
     {
 
         /// <summary>

@@ -13,7 +13,7 @@ namespace TDU.CMS.ViewModels
     /// <summary>
     /// Represents the CardRequests collection view model.
     /// </summary>
-    public partial class CardRequestCollectionViewModel : CollectionViewModel<CardRequest, long, ICMSDbContextUnitOfWork>
+    public partial class CardRequestCollectionViewModel : CollectionViewModel<Models.CardRequest, long, ICMSDbContextUnitOfWork>
     {
 
         /// <summary>
